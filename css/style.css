@@ -2,27 +2,14 @@
 	margin: 0;
 }
 
+.container {
+	max-width: 100%; 
+}
+
 body {
 	background-image: url("../assets/images/seigaiha.png");
 	background-attachment: fixed;
-	height: auto;
-	margin-top: 105px;
-}
-
-@media screen {
-	body {
-		max-width: 980px;
-	}
-}
-
-@media screen {
-	body {
-		max-width: 768px;
-}
-
-@media screen {
-	body {
-		max-width: 640px;
+	height: 100%;
 }
 
 h1 {
@@ -72,32 +59,13 @@ hr {
 
 .nav-bar {
 	display: block;
-	margin-bottom: 35px;
-	z-index: 2;
+	margin: 0 380px 35px 0;
 	top: 0;
 	width: 100%;
-	position: absolute;
 	height: 80px;
 	background-color: #ffffff;
 	border-bottom: solid 2px #cccccc;
 	overflow: auto;
-}
-
-.wrap {
-	min-height: 100%;
-  	margin-bottom: 100%;
-  	max-width: 100%; 
-}
-
-.wrap:after {
-  	display: block;
-}
-
-#port-nav {
-	width: 90px;
-	height: 45px;
-	border-left: 2px solid #dddddd;
-	border-right: 2px solid #dddddd;
 }
 
 #header {
@@ -112,14 +80,22 @@ hr {
 	padding: 26px 4px;
 	width: 235px;
 	height: 28px;
-	margin: 0 0 0 50px;
+	margin-left: 170px;
+}
+
+#port-nav {
+	width: 90px;
+	height: 45px;
+	border-left: 2px solid #dddddd;
+	border-right: 2px solid #dddddd;
 }
 
 ul {
     list-style-type: none;
-    margin-right: 390px;
     padding-top: 25px;
     overflow: hidden;
+    margin-right: 300px;
+
 }
 
 li {
@@ -143,11 +119,17 @@ li a:hover {
 	color: yellow; 
 }
 
+.wrap {
+	min-height: 100%;
+  	margin-bottom: 100%;
+  	max-width: 960px; 
+  	margin-left: 170px;
+}
+
 .main-content {
 	display: block;
 	float: left;
 	max-width: 650px;
-	margin-left: 50px;
 	padding: 10px 5px; 
 	background: #ffffff;
 	border: 2px solid #dddddd;
@@ -163,12 +145,11 @@ li a:hover {
 
 .connect {
 	display: block;
-	float: left;
+	float: right;
 	background: #ffffff;
 	border: 2px solid #dddddd;
 	width: 270px;
 	height: 130px;
-	margin-left: 40px;
 	overflow: hidden;
 }
 
@@ -268,6 +249,10 @@ input[type=submit] {
 	padding-top: 23px;
 }
 
+.wrap:after {
+  	display: block;
+}
+
 footer, .wrap:after {
 	height: 50px;
 	border-top: solid 5px #4aaaa5;
@@ -292,4 +277,20 @@ footer {
 	color: #ccc;
 	line-height: 25px;
 	padding-top: 10px;
+}
+
+@media screen and (max-width: 980px) {
+	body {
+		
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		
+}
+
+@media screen and (max-width: 640px) {
+	body {
+
 }
