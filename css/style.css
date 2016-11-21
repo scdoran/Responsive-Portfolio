@@ -121,7 +121,7 @@ li a:hover {
 
 .wrap {
 	min-height: 100%;
-  	margin-bottom: 50px;
+  	margin-bottom: 150px;
   	max-width: 960px; 
   	margin-left: 170px;
 }
@@ -131,6 +131,7 @@ li a:hover {
 	float: left;
 	max-width: 650px;
 	padding: 10px 5px; 
+	margin-bottom: 60px;
 	background: #ffffff;
 	border: 2px solid #dddddd;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -147,6 +148,7 @@ li a:hover {
 .connect {
 	display: block;
 	float: right;
+	margin-bottom: 80px;
 	background: #ffffff;
 	border: 2px solid #dddddd;
 	width: 270px;
@@ -442,6 +444,7 @@ footer {
 	#header {
 		width: 100%;
 		margin: 0;
+		position: static;
 	}
 
 	ul {
